@@ -1,0 +1,47 @@
+//@import "./reset.scss";
+
+$maincolor: #ff0000;
+
+.red {
+  color: $maincolor;
+}
+
+@mixin alert() {
+  background: #eeeeee;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+}
+
+.my-alert {
+  @include alert();
+}
+
+.my-alert p {
+  margin-bottom: 0;
+}
+
+.my-alert-yellow {
+  @extend .my-alert;
+  background: #ffe591;
+}
+
+// div.container h4 {
+//   color: blue;
+// }
+
+// div.container p {
+//   color: green;
+// }
+
+//nesting : selector 대신 씀
+div.container {
+  h4 {
+    color: blue;
+  }
+  p {
+    color: green;
+  }
+}

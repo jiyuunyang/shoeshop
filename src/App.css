@@ -2,6 +2,21 @@
   text-align: center;
 }
 
+.background {
+  background-image: url("./background.jpeg");
+  background-size: cover;
+  height: 300px;
+  display: table;
+  width: 100%;
+}
+
+.background-content {
+  display: table-cell;
+  color: white;
+  vertical-align: middle;
+  top: 30%;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
